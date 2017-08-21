@@ -1,4 +1,7 @@
 
+
+
+  
 html {
 	box-sizing: border-box;
 }
@@ -10,7 +13,6 @@ html {
 }
 
 .container {
-	/**max-width: 1356px;**/
 	flex: 1 0 auto;
 	margin: auto;
 }
@@ -80,7 +82,7 @@ hr {
 }
 
 form {
-	width: 650px;
+	max-width: 650px;
 }
 
 textarea {
@@ -234,4 +236,47 @@ footer {
 	font-size: small;
 	padding: 30px 0px 30px 0px;
 	border-top: 7px solid #4aaaa5;
+}
+/** for mobile devices **/
+ @media only screen and (max-width:600px) {
+
+* {
+	text-align: center;
+}
+
+form {
+	padding: 10px;
+}	
+
+ .content-container {
+ 	flex-direction: column;
+ 	max-width:100%;
+ }
+
+.navbar {
+	flex-direction: column;
+	align-items: center;
+	max-width: 100%;
+}
+
+.social, .content {
+	margin: 30px;
+	padding: 20px;
+}
+
+.main-logo {
+	margin: 0;
+	max-width: 100%;
+}
+
+.image-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.image {
+	display: flex;
+	padding: 20px;
+	flex: 1 0 auto;
+}
 }
