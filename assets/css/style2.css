@@ -120,7 +120,7 @@ a:hover {
 .content, .social {
 	background-color: #fff;
 	border: 1px solid #ddd;
-	padding: 30px;
+	padding: 10px;
 }
 
 #gallery {
@@ -155,7 +155,7 @@ a:hover {
 }
 
 .flex-image image {
-	width: 100%;
+	width: 200px;
 	height: auto;
 	z-index: 1;
 }
@@ -237,6 +237,8 @@ footer {
 	padding: 30px 0px 30px 0px;
 	border-top: 7px solid #4aaaa5;
 }
+
+
 /** for mobile devices **/
  @media only screen and (max-width:600px) {
 
@@ -245,12 +247,23 @@ footer {
 }
 
 form {
-	padding: 10px;
+	padding: 30px 100px 30px 56px;
+	max-width: 100%;
+	margin: auto;
+
 }	
+
+p {
+	text-align: left;
+	max-width: 75%;
+	margin: auto;
+}
 
  .content-container {
  	flex-direction: column;
  	max-width:100%;
+ 	margin: auto;
+ 	justify-content: center;
  }
 
 .navbar {
@@ -260,8 +273,11 @@ form {
 }
 
 .social, .content {
-	margin: 30px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	padding: 20px;
+	max-width: 75%;
 }
 
 .main-logo {
@@ -272,11 +288,16 @@ form {
 .image-box {
 	display: flex;
 	flex-direction: column;
+	padding-left: 30px;
 }
 
 .image {
 	display: flex;
 	padding: 20px;
+	padding-left: 50px;
 	flex: 1 0 auto;
+}
+
+
 }
 }
